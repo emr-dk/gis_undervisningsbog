@@ -27,15 +27,15 @@
 % \usepackage{hyphenat}
 \usepackage{url}
 \usepackage[backend=biber, natbib=true, style=numeric]{biblatex}
-\addbibresource{sample-handout.bib}
+\addbibresource{references.bib}
 \usepackage{xargs}
 \renewcommandx{\cite}[3][1={0pt},2={}]{\sidenote[][#1]{\fullcite[#2]{#3}}}
 
 %%
 % Book metadata
-\title{A Tufte-Style Book}
+\title{GIS til en ny tid}
 \date{The edition number}
-\author[The Tufte-LaTeX Developers (with modifications)]{The Tufte-LaTeX\ Developers (with modifications)}
+\author[]{En gruppe dedikerede GIS folk}
 \publisher{Publisher of This Book}
 
 %%
@@ -297,8 +297,11 @@ and \mbox{Donald E.~Knuth}.
 
 % r.9 introduction
 \cleardoublepage
-\section{Layout description}
 
 \section{Hvad er GIS?}
+\section{Layout description}
+\include{sections/layout.tex}
+
+
 
 \end{document}
