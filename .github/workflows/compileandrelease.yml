@@ -1,6 +1,8 @@
 name: Build LaTeX document
 on:
  [push]
+permissions:
+ write-all
 jobs:
   run_if:
     if: startsWith(github.ref, 'refs/tags/')
